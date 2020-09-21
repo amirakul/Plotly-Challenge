@@ -2,6 +2,7 @@
 d3.json("samples.json").then((data) => {
     var id = data.names;
     console.log(id);
+    console.log(data.metadata);
     var names=d3.selectAll("#selDataset");
     Object.entries(id).forEach(([key,value]) => {
         names.append("option").text(value);
