@@ -3,7 +3,10 @@ In this assignment, you will build an interactive dashboard to explore the [Bell
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
+Here's how a landing page looks like:
+![Landing Page](PageLook.png)
 ## Step 1: Plotly
+
 
 1. Use the D3 library to read in `samples.json`.
 
@@ -15,7 +18,7 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 * Use `otu_labels` as the hovertext for the chart.
 
-  ![bar Chart](Images/hw01.png)
+
 
 3. Create a bubble chart that displays each sample.
 
@@ -29,12 +32,12 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 * Use `otu_labels` for the text values.
 
-![Bubble Chart](Images/bubble_chart.png)
+
 
 4. Display the sample metadata, i.e., an individual's demographic information.
 
 5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
-![hw](Images/hw03.png)
+
 
 6. Update all of the plots any time that a new sample is selected.
