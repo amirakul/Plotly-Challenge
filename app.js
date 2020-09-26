@@ -11,20 +11,19 @@ d3.json("samples.json").then((data) => {
     });
     optionChanged(id[0]);
 });
-// STEP 2: Make demographic info panel
+// STEP 2: Create functions for metadata and graphs
 function metadata(id) {
-// d3.json("samples.json").then((data) => {
-    // var id ="940";
     var demographic= json_data.metadata;
     console.log(demographic);
     var info_panel=d3.select("#sample-metadata");
     info_panel.html("");
+    //Filtering data to select the 1st ten 
     filteredDemog=demographic.filter(x => x.id == id)[0];
     console.log(filteredDemog);
     Object.entries(filteredDemog).forEach(([key,value]) => {
         info_panel.append("h5").text(`${key}:${value}`);
     });
-    //Gauge
+    //Creating the Gauge
     var data = [
         {
           domain: { x: [0, 1], y: [0, 1] },
@@ -39,11 +38,6 @@ function metadata(id) {
               { range: [0, 4], color: "lightgray" },
               { range: [4, 9], color: "gray" }
             ],
-            // threshold: {
-            //   line: { color: "red", width: 4 },
-            //   thickness: 0.75,
-            //   value: 490
-            // }
           }
         }
       ];
@@ -52,21 +46,15 @@ function metadata(id) {
       Plotly.newPlot('gauge', data, layout);
 
 };
-
-//STEP3: Making Plots (horiz. bar and bubble charts)
+//Creating the second function
 function graphs(id){
-// d3.json("samples.json").then((data) => {
-    //Sort the data
-    // var id= "940";
     var sample_data=json_data.samples;
     filteredSamples=sample_data.filter(x => x.id == id)[0];
-    //var sortValues=data.sort((a, b) => b.sample_values - a.sample_values);
-    // Slice the first 10 objects for plottin
     filtered_otu_id = filteredSamples.otu_ids;
     filtered_sample_value = filteredSamples.sample_values;
     filtered_otu_label = filteredSamples.otu_labels;
     
-    // Trace1 for the Greek Data
+    // Setting the trace for bar chart
     var trace1 = {
     // Get the 1st ten in reverse order
     x: filtered_sample_value.slice(0, 10).reverse(),
@@ -91,7 +79,7 @@ function graphs(id){
     // Render the plot to the div tag with id "plot"
     Plotly.newPlot("bar", bar_data, bar_layout)
 
-
+    //Setting up the bubble trace
     var trace2 = {
         x: filtered_otu_id,
         y: filtered_sample_value,
@@ -113,6 +101,8 @@ function graphs(id){
       Plotly.newPlot('bubble', bubble_data, bubble_layout);
 
 };
+//To make the info panel and all the charts dynamic, we will call those functions
+//when option is changed using optionChanged function
 function optionChanged (new_id){
     metadata(new_id);
     graphs(new_id);
