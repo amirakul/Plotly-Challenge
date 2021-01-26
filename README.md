@@ -4,8 +4,7 @@ In this assignment, I created an interactive dashboard to explore the [Belly But
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
-Here's how a landing page looks like:
-![Landing Page](Images/PageLook.png)
+
 
 My plan in creting this interactice dashboard:
 
@@ -53,3 +52,6 @@ This is how the demographic information table looks like:
 
 
 6. Update all of the plots any time that a new sample is selected.
+
+Here's how a landing page looks like with initial test subject with Id number 940:
+![Landing Page](Images/PageLook.png)
