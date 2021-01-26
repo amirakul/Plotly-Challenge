@@ -21,7 +21,7 @@ I followed the following steps in creating this interactice dashboard:
 
 * Use `otu_labels` as the hovertext for the chart.
 
-This is how the horizontal bar chart looks like:
+This is how the horizontal bar chart looks like displaying the highest 10 OTU from highest to lowest values:
 
 ![bar_chart](Images/bar_chart.png)
 
