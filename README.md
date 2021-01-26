@@ -55,3 +55,6 @@ This is how the demographic information table looks like:
 
 Here's how a landing page looks like with initial test subject with Id number 940:
 ![Landing Page](Images/PageLook.png)
+
+Since this dashbaord is interactive, charts change as a user chooses a different test subject. Here's a look of another test subject with ID number 958:
+![Landing2 Page](Images/2nd_page.png)
