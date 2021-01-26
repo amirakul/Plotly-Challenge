@@ -6,7 +6,7 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 
 
-My plan in creating this interactice dashboard:
+I followed the following steps in creating this interactice dashboard:
 
 ## Step 1: Plotly
 
