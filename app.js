@@ -94,7 +94,7 @@ function graphs(id){
       var bubble_data = [trace2];
       
       var bubble_layout = {
-        title: 'Marker Size and Color',
+        title: 'Bubble Chart of Bacteria in Test Subjects',
         showlegend: false
       };
       
