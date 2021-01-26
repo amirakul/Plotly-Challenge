@@ -23,6 +23,7 @@ My plan in creting this interactice dashboard:
 * Use `otu_labels` as the hovertext for the chart.
 
 This is how the horizontal bar chart looks like:
+
 ![bar_chart](Images/bar_chart.png)
 
 3. Create a bubble chart that displays each sample.
@@ -37,9 +38,15 @@ This is how the horizontal bar chart looks like:
 
 * Use `otu_labels` for the text values.
 
+This is how the bubble bar chart looks like:
 
+![bubble_chart](Images/bubble_chart.png)
 
 4. Display the sample metadata, i.e., an individual's demographic information.
+This is how the demographic information table looks like:
+
+![demo_info](Images/demo_info.png)
+
 
 5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
