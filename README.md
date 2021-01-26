@@ -1,11 +1,14 @@
 # Plotly Challenge
 
-In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
+In this assignment, I created an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
 Here's how a landing page looks like:
-![Landing Page](PageLook.png)
+![Landing Page](Images/PageLook.png)
+
+My plan in creting this interactice dashboard:
+
 ## Step 1: Plotly
 
 
@@ -19,7 +22,8 @@ Here's how a landing page looks like:
 
 * Use `otu_labels` as the hovertext for the chart.
 
-
+This is how the horizontal bar chart looks like:
+![bar_chart](Images/bar_chart.png)
 
 3. Create a bubble chart that displays each sample.
 
